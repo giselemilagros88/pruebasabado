@@ -1,0 +1,40 @@
+/*header
+navbar
+container-fluid
+navbar-brand
+navbar
+container-fluid
+navbar-brand
+logo*/
+
+
+.logo{
+  width: 100px;
+}
+/*
+.contenedor{
+    background-color: aquamarine;
+}
+.flexible{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.icon{
+    width: 50px;
+}
+*/
+.contenedor{
+    background-color: aquamarine;
+    .flexible{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        .icon{
+            width: 50px;
+        }
+    }
+}

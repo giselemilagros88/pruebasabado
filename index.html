@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--AOS ANIMACIONES CON SCROLL-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+     <style>
+       .contenedorAnimaciones{
+            overflow: hidden;
+        }
+        .mobile{
+          display:none;
+        }
+        .escritorio{
+          display: block;
+        }
+        @media screen and (max-width: 768px){
+          .escritorio{
+            display: none;
+          }
+          .mobile{
+            display: block;
+          }
+        }
+     </style>
+    <title>Animaciones Aos con scroll</title>
+  </head>
+  <body class="bg-secondary">
+    <header class="mb-5">
+        <!--navbar de bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light colorPropio">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="#">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid ">
+                        <a class="navbar-brand" href="#">
+                            <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top logo">
+                            AOS
+                        </a>
+                    </div>
+                  </nav>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-around w-100">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+    <main>
+      <!--a este div que va a contener las tarjetas animadas, es al que le pongo overflow: hidden-->
+        <div class="container contenedorAnimaciones">
+            <div class="row">
+                <div data-aos="slide-left" data-aos-delay="600" class="col-12 mb-5">
+                    <div class="card w-75 m-auto">
+                        <div class="card-body">
+
+                          <h5 data-aos="slide-right" data-aos-delay="600" class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <!--div de escritorio-->
+                <div class="col-12 mb-5 bg-success escritorio" data-aos="slide-right" data-aos-delay="1000">
+                    <div  class="card w-75 m-auto">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <!--div para mobile -->
+                <div class="col-12 mb-5 bg-primary mobile">
+                  <div data-aos="slide-right"   class="card w-75 m-auto">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                      </div>
+                  </div>
+              </div>
+
+                <!--termina div de mobile-->
+                <div  data-aos="slide-left" data-aos-delay="1200" class="col-12 mb-5">
+                    <div  class="card w-75 m-auto">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div data-aos="slide-right" data-aos-offset="200" class="card w-75 m-auto">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div data-aos="slide-left" data-aos-offset="200" class="card w-75 m-auto">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div data-aos="slide-right" data-aos-offset="200" class="card w-75 m-auto">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div data-aos="slide-left" data-aos-offset="200" class="card w-75 m-auto">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div data-aos="slide-rigth" data-aos-offset="200" class="card w-75 m-auto">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium! Dolor fugit debitis vero maxime impedit quos. Rerum illum quibusdam temporibus non, vel ea adipisci, perferendis aliquam dolore doloribus dicta!</p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="container">
+      <div class="row container">
+        <div class="col-sm-12 ">
+          <h1 class="text-center mb-5">titulo</h1>
+       </div>
+        <div class="col-sm-12 border border-1 border-dark mb-5  bg-light">
+          <div class="container">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+         
+
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <!-- 
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <h1 class="text-center">footer</h1>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h1 class="text-center">footer</h1>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h1 class="text-center">footer</h1>
+            </div>
+          </div>
+        </div>
+      -->
+      <div class="d-flex justify-content-end">
+        <div class="p-2 ">
+          <h1 class="text-center">Instagram</h1>
+        </div>
+        <div class="p-2">
+          <h1 class="text-center">facebook</h1>
+        </div>
+        <div class="p-2 ">
+          <h1 class="text-center">wsp</h1>
+        </div>
+      </div>
+    </footer>
+
+   
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--SCRIPT DE JS DE AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- 
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     -->
+
+  </body>
+</html>
